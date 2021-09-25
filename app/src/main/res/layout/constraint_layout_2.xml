@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/color_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/red"
+        android:text="color 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="5dp"
+        />
+    <Button
+        android:id="@+id/color_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/yellow"
+        android:text="color 2"
+        app:layout_constraintStart_toEndOf="@id/color_1"
+        app:layout_constraintTop_toTopOf="@id/color_1"
+        android:layout_marginHorizontal="5dp"
+        />
+    <Button
+        android:id="@+id/color_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/blue"
+        android:text="color 3"
+        app:layout_constraintStart_toEndOf="@id/color_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="5dp"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@id/color_1"
+        />
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:text="clear"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/color_3"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
