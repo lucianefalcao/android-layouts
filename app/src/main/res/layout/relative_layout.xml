@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/um"
+        android:text="Botão 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-32dp"
+        android:layout_above="@+id/tres"
+        android:layout_toLeftOf="@+id/tres"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/dois"
+        android:text="Botão 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-32dp"
+        android:layout_above="@+id/quatro"
+        android:layout_toEndOf="@+id/quatro"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/tres"
+        android:text="Botão 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-32dp"
+        android:layout_above="@+id/cinco"
+        android:layout_toStartOf="@+id/cinco"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/quatro"
+        android:text="Botão 4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-32dp"
+        android:layout_above="@+id/cinco"
+        android:layout_toEndOf="@+id/cinco"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/cinco"
+        android:text="Botão 5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>
